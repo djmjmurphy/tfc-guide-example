@@ -22,7 +22,7 @@ resource "aws_instance" "ubuntu" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
   security_groups = ["sg-05570c2e15634dd1a"]
-  subnet_ip = "subnet-0428c440c22a8503e"
+  subnet_id = "subnet-0428c440c22a8503e"
 
   tags = {
     Name = var.instance_name
